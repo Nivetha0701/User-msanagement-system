@@ -1,0 +1,18 @@
+# Dependencies
+**/node_modules/
+**/target/
+__pycache__/
+*.pyc
+
+# IDEs & System
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Build Artifacts
+**/build/
+*.class
+*.jar
+*.war

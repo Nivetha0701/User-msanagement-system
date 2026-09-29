@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
-const API_URL = 'http://localhost:8080/api/users';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/users';
 
 // Palette of refined, harmonious gradient backgrounds for user avatars
 const AVATAR_PALETTES = [
