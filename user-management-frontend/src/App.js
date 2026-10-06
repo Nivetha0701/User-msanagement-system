@@ -4,7 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
-const RAW_API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:8080/api/users').trim().replace(/\/+$/, '');
+const PRODUCTION_API_URL = 'https://user-msanagement-system-1.onrender.com/api/users';
+const RAW_API_URL = (process.env.REACT_APP_API_URL || PRODUCTION_API_URL).trim().replace(/\/+$/, '');
 const API_URL = RAW_API_URL.endsWith('/api/users') ? RAW_API_URL : `${RAW_API_URL}/api/users`;
 
 // Palette of refined, harmonious gradient backgrounds for user avatars
